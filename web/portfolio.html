@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica ;
+  padding: 18px;
+  background: #e05f14;
+}
+
+/* Header/Title */
+.header {
+  padding: 30px;
+  text-align: left;
+  background: light grey;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #f5d311;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>PORTFOLIO</h1>
+
+</div>
+
+<div class="topnav">
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Projects</a>
+
+</div>
+<!--PHOTOGRAPHS: Add images here-->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <p><div><img src="sunflower.jpg" alt="sunflower" width="100%" height="100%"></div></p>
+      <p><div><img src="boats.jpg" alt="boats along the seaside" width="100%" height="100%"></div></p>
+    </div>
+    <div class="card">
+
+      <h2>VIDEO</h2><!-- Embed YouTube videos -->
+      <table style="width:100%">
+        <tr>
+           <th><center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m3HHg1Vm9os" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+            <td><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h8a1bboroic?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td></center>
+         </tr>
+        </table>
+
+        </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+
+<!--Add logo/ID, black and white-->
+      <div><img src="id.jpg" alt="black and white id" width="100%" height="100%"></div>
+<!--Insert quotation-->
+      <br>
+      <p><font size="2"><q>Dream delivers us to dream, and there is no end to illusion. Life is a train of moods like a string of beads, and as we pass through them they prove to be many-colored lenses which paint the world their own hue, and each shows only what lies in its focus. From the mountain you see the mountain.</font></q></p>
+
+<!--Soundcloud-->
+    </div>
+    <div class="card">
+      <h3>Audio</h3>
+      <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/69533189&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>
+    <div class="card">
+
+<!--Flickr-->
+      <h3>Albums</h3>
+      <p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/seapias/albums/72157688855787580" title="2018"><img src="https://live.staticflickr.com/817/26975165988_a7b7ec74ae.jpg" width="100%" height="100%" alt="photo slideshow"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+      <p><a data-flickr-embed="true"  href="https://www.flickr.com/gp/seapias/uvA18Y" title="Flowers"><img src="https://live.staticflickr.com/3576/3696579317_0d7e4c1553_z.jpg" width="100%" height="100%" alt="Flowers"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+      <p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/seapias/albums/72157623974461835" title="Philippines"><img src="https://live.staticflickr.com/6182/6074700757_fdb740fca7_z.jpg" width="100%" height="100%" alt="Philippines"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+      <p><a data-flickr-embed="true"  href="https://www.flickr.com/gp/seapias/7bAd87" title="Korea"><img src="https://live.staticflickr.com/5126/5344443421_48c038c790_z.jpg" width="100%" height="100%" alt="Korea"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Copyright 2019</p>
+</div>
+
+</body>
+
+</html>
